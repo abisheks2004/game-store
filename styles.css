@@ -1,0 +1,75 @@
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  color: #000000;
+  padding: 30px;
+}
+
+#heading {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#main-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px;
+  padding: 50px;
+}
+
+.sub-div {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.sub-div:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  width: 350px;
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.desc {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: #666;
+}
+
+.price-para {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #111;
+  margin-top: 10px;
+}
+
+.game-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007BFF;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.game-link:hover {
+  color: #0056b3; 
+}
