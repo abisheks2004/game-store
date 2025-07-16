@@ -12,7 +12,7 @@ A **modern, responsive Game Store webpage** built using **HTML, CSS, and JavaScr
 
 ## 🎨 Preview  
 
-![Game Store Preview](img/preview.png)  
+![Game Store Preview](favicon/preview.png)  
 
 ---
 ## 🛠 Tech Stack  
