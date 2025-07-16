@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Prices</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="shortcut icon" href="favicon/stars.png" type="image/x-icon">
 </head>
 <body>
-  <header>
-    <h1 id="heading">🎮 Game Store</h1>
-  </header>
-  
+ <header>
+  <h1 id="heading">🎮 Game Store</h1>
+  <div id="cart" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <h2>🛒 Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="empty-msg">Your cart is empty</p>
+    <hr>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+        <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    <button class="close-btn" onclick="toggleCart()">Close</button>
+  </div>
+</div>
+
   <main>
     <div id="main-div">
       
@@ -21,6 +36,8 @@
         <p class="desc">A fast-paced battle royale game with exciting survival missions.</p>
         <p class="price-para">Price: ₹199</p>
         <a href="https://ff.garena.com/" target="_blank" class="game-link">🔗 Official Page</a>
+        <br>
+          <button class="add-cart" onclick="addToCart('Free Fire',199)">Add to Cart</button>
       </div>
 
       <div class="sub-div">
@@ -29,6 +46,8 @@
         <p class="desc">Realistic multiplayer battle royale with intense action gameplay.</p>
         <p class="price-para">Price: ₹299</p>
         <a href="https://pubg.com/" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+          <button class="add-cart" onclick="addToCart('PUBG',299)">Add to Cart</button>
       </div>
 
       <div class="sub-div">
@@ -37,6 +56,8 @@
         <p class="desc">Classic FPS shooter with amazing graphics and missions.</p>
         <p class="price-para">Price: ₹299</p>
         <a href="https://www.callofduty.com/" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+          <button class="add-cart" onclick="addToCart('Call of Duty',299)">Add to Cart</button>
       </div>
 
       <div class="sub-div">
@@ -45,6 +66,8 @@
         <p class="desc">Explore an open-world city with endless adventure and missions.</p>
         <p class="price-para">Price: ₹499</p>
         <a href="https://www.rockstargames.com/gta-v" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+         <button class="add-cart" onclick="addToCart('GTA V',499)">Add to Cart</button>
       </div>
 
       <div class="sub-div">
@@ -53,6 +76,8 @@
         <p class="desc">A thrilling sci-fi adventure with stunning visuals.</p>
         <p class="price-para">Price: ₹399</p>
         <a href="https://www.ea.com/games/split-fiction/split-fiction" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+          <button class="add-cart" onclick="addToCart('Split Fiction',399)">Add to Cart</button>
       </div>
 
       <div class="sub-div">
@@ -61,6 +86,8 @@
         <p class="desc">Fun cartoon-style battle royale with creative building modes.</p>
         <p class="price-para">Price: ₹499</p>
         <a href="https://www.fortnite.com/" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+          <button class="add-cart" onclick="addToCart('Fortnite',499)">Add to Cart</button>
       </div>
        
       <div class="sub-div">
@@ -69,6 +96,8 @@
         <p class="desc">A tactical 5v5 shooter with unique agents, abilities, and strategic gameplay.</p>
         <p class="price-para">Price: ₹299</p>
         <a href="https://playvalorant.com/" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+        <button class="add-cart" onclick="addToCart('Valorant',299)">Add to Cart</button>
       </div>
 
       <div class="sub-div">
@@ -77,9 +106,12 @@
         <p class="desc">A fast-paced battle royale with heroes, abilities, and team-based action.</p>
         <p class="price-para">Price: ₹399</p>
         <a href="https://www.ea.com/games/apex-legends" target="_blank" class="game-link">🔗 Official Page</a>
+          <br>
+          <button class="add-cart" onclick="addToCart('Apex Legends',399)">Add to Cart</button>
       </div>
 
     </div>
   </main>
+ <script src="script.js"></script>
 </body>
 </html>
