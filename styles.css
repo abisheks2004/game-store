@@ -6,13 +6,13 @@ body {
 }
 
 header {
-  color: #000000;
-  padding: 30px;
+  color: #000;
+  padding: 20px;
   text-align: center;
 }
 
 #heading {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -20,60 +20,58 @@ header {
 #main-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  padding: 50px;
+  gap: 20px;
+  padding: 20px 40px;
   justify-items: center;
 }
 
 .sub-div {
   background: #fff;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
+  padding: 12px;
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease;
   text-align: center;
 }
 
 .sub-div:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .img {
   width: 100%;
-  max-width: 350px;
-  height: 250px;
+  max-width: 220px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-top: 20px;
+  font-size: 1.3rem;
+  margin-top: 10px;
   color: #333;
-  text-align: center;
 }
 
 .desc {
-  font-size: 1.3rem;
-  margin: 15px auto;
+  font-size: 0.95rem;
+  margin: 6px auto;
   color: #666;
-  max-width: 300px;
-  text-align: center;
+  max-width: 200px;
 }
 
 .price-para {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #111;
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 5px;
 }
 
 .game-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   color: #007BFF;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -85,11 +83,17 @@ h2 {
 
 @media (max-width: 1200px) {
   #main-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  #main-div {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   #main-div {
     grid-template-columns: 1fr;
   }
